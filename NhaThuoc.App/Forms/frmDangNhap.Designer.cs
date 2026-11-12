@@ -32,12 +32,12 @@
             lblTieuDe = new Label();
             pnlNoiDung = new Panel();
             cardDangNhap = new CardPanel();
-            lblTen = new Label();
-            txtTenDangNhap = new TextBox();
-            lblMatKhau = new Label();
-            txtMatKhau = new TextBox();
-            lblLoi = new Label();
             btnDangNhap = new Button();
+            lblLoi = new Label();
+            txtMatKhau = new TextBox();
+            lblMatKhau = new Label();
+            txtTenDangNhap = new TextBox();
+            lblTen = new Label();
             pnlHeader.SuspendLayout();
             pnlNoiDung.SuspendLayout();
             cardDangNhap.SuspendLayout();
@@ -87,49 +87,6 @@
             cardDangNhap.Size = new Size(374, 261);
             cardDangNhap.TabIndex = 0;
             // 
-            // lblTen
-            // 
-            lblTen.AutoSize = true;
-            lblTen.Location = new Point(18, 18);
-            lblTen.Name = "lblTen";
-            lblTen.Size = new Size(107, 20);
-            lblTen.TabIndex = 0;
-            lblTen.Text = "Tên đăng nhập";
-            // 
-            // txtTenDangNhap
-            // 
-            txtTenDangNhap.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtTenDangNhap.Location = new Point(18, 42);
-            txtTenDangNhap.Name = "txtTenDangNhap";
-            txtTenDangNhap.Size = new Size(340, 27);
-            txtTenDangNhap.TabIndex = 1;
-            // 
-            // lblMatKhau
-            // 
-            lblMatKhau.AutoSize = true;
-            lblMatKhau.Location = new Point(18, 84);
-            lblMatKhau.Name = "lblMatKhau";
-            lblMatKhau.Size = new Size(70, 20);
-            lblMatKhau.TabIndex = 2;
-            lblMatKhau.Text = "Mật khẩu";
-            // 
-            // txtMatKhau
-            // 
-            txtMatKhau.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            txtMatKhau.Location = new Point(18, 108);
-            txtMatKhau.Name = "txtMatKhau";
-            txtMatKhau.Size = new Size(340, 27);
-            txtMatKhau.TabIndex = 3;
-            txtMatKhau.UseSystemPasswordChar = true;
-            // 
-            // lblLoi
-            // 
-            lblLoi.Location = new Point(18, 144);
-            lblLoi.Name = "lblLoi";
-            lblLoi.Size = new Size(340, 24);
-            lblLoi.TabIndex = 4;
-            lblLoi.Text = "0000";
-            // 
             // btnDangNhap
             // 
             btnDangNhap.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
@@ -140,6 +97,49 @@
             btnDangNhap.Tag = "primary";
             btnDangNhap.Text = "Đăng nhập";
             btnDangNhap.UseVisualStyleBackColor = true;
+            // 
+            // lblLoi
+            // 
+            lblLoi.Location = new Point(18, 144);
+            lblLoi.Name = "lblLoi";
+            lblLoi.Size = new Size(340, 24);
+            lblLoi.TabIndex = 4;
+            lblLoi.Text = "demo";
+            // 
+            // txtMatKhau
+            // 
+            txtMatKhau.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtMatKhau.Location = new Point(18, 108);
+            txtMatKhau.Name = "txtMatKhau";
+            txtMatKhau.Size = new Size(340, 27);
+            txtMatKhau.TabIndex = 3;
+            txtMatKhau.UseSystemPasswordChar = true;
+            // 
+            // lblMatKhau
+            // 
+            lblMatKhau.AutoSize = true;
+            lblMatKhau.Location = new Point(18, 84);
+            lblMatKhau.Name = "lblMatKhau";
+            lblMatKhau.Size = new Size(70, 20);
+            lblMatKhau.TabIndex = 2;
+            lblMatKhau.Text = "Mật khẩu";
+            // 
+            // txtTenDangNhap
+            // 
+            txtTenDangNhap.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            txtTenDangNhap.Location = new Point(18, 42);
+            txtTenDangNhap.Name = "txtTenDangNhap";
+            txtTenDangNhap.Size = new Size(340, 27);
+            txtTenDangNhap.TabIndex = 1;
+            // 
+            // lblTen
+            // 
+            lblTen.AutoSize = true;
+            lblTen.Location = new Point(18, 18);
+            lblTen.Name = "lblTen";
+            lblTen.Size = new Size(107, 20);
+            lblTen.TabIndex = 0;
+            lblTen.Text = "Tên đăng nhập";
             // 
             // frmDangNhap
             // 
