@@ -40,6 +40,7 @@
             btnLuuPhieu = new Button();
             pnlK2 = new Panel();
             cardThemDong = new CardPanel();
+            lblHan = new Label();
             lblGia = new Label();
             lblSL = new Label();
             btnThemDong = new Button();
@@ -173,6 +174,7 @@
             // cardThemDong
             // 
             cardThemDong.BackColor = Color.Transparent;
+            cardThemDong.Controls.Add(lblHan);
             cardThemDong.Controls.Add(lblGia);
             cardThemDong.Controls.Add(lblSL);
             cardThemDong.Controls.Add(btnThemDong);
@@ -190,6 +192,15 @@
             cardThemDong.Padding = new Padding(14);
             cardThemDong.Size = new Size(1130, 190);
             cardThemDong.TabIndex = 2;
+            // 
+            // lblHan
+            // 
+            lblHan.AutoSize = true;
+            lblHan.Location = new Point(520, 59);
+            lblHan.Name = "lblHan";
+            lblHan.Size = new Size(39, 20);
+            lblHan.TabIndex = 11;
+            lblHan.Text = "HSD";
             // 
             // lblGia
             // 
@@ -383,5 +394,6 @@
         private System.Windows.Forms.Timer timerTim;
         private Label lblGia;
         private Label lblSL;
+        private Label lblHan;
     }
 }

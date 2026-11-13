@@ -26,8 +26,8 @@ public partial class frmMain : Form
         // Bỏ dấu // ở từng dòng dưới đây khi đã tạo form tương ứng (mục 10 đến 13):
         mnuDanhMuc.Click += (_, _) => Mo<frmDanhMucThuoc>();
         mnuNhapKho.Click += (_, _) => Mo<frmNhapKho>();
-        // mnuBanHang.Click += (_, _) => Mo<frmBanHang>();
-        // mnuBaoCao.Click += (_, _) => Mo<frmBaoCao>();
+        mnuBanHang.Click += (_, _) => Mo<frmBanHang>();
+        mnuBaoCao.Click += (_, _) => Mo<frmBaoCao>();
         mnuDangXuat.Click += (_, _) => { AppServices.NguoiDungHienTai = null; Application.Restart(); };
 
         Load += (_, _) => Mo<frmTimThuoc>();

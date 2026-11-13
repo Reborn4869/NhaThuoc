@@ -24,11 +24,15 @@ internal static class AppServices
         Auth = new AuthService(Users);
         DanhMuc = new DanhMucService(new DanhMucRepository(ConnectionString), Search);
         Kho = new KhoService(new KhoRepository(ConnectionString));
+        BanHang = new BanHangService(new BanHangRepository(ConnectionString));
+        BaoCao = new BaoCaoRepository(ConnectionString);
     }
     public static UserRepository Users { get; private set; } = null!;
     public static AuthService Auth { get; private set; } = null!;
     public static NguoiDung? NguoiDungHienTai { get; set; }
     public static DanhMucService DanhMuc { get; private set; } = null!;
     public static KhoService Kho { get; private set; } = null!;
+    public static BanHangService BanHang { get; private set; } = null!;
+    public static BaoCaoRepository BaoCao { get; private set; } = null!;
 
 }
