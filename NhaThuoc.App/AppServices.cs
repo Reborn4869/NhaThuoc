@@ -23,10 +23,12 @@ internal static class AppServices
         Users = new UserRepository(ConnectionString);
         Auth = new AuthService(Users);
         DanhMuc = new DanhMucService(new DanhMucRepository(ConnectionString), Search);
+        Kho = new KhoService(new KhoRepository(ConnectionString));
     }
     public static UserRepository Users { get; private set; } = null!;
     public static AuthService Auth { get; private set; } = null!;
     public static NguoiDung? NguoiDungHienTai { get; set; }
     public static DanhMucService DanhMuc { get; private set; } = null!;
+    public static KhoService Kho { get; private set; } = null!;
 
 }
