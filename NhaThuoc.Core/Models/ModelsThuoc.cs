@@ -13,6 +13,7 @@ public sealed class ThuocKetQua
     public string KieuKhop { get; init; } = "";
     public int Diem { get; init; }
     public bool CungHamLuong { get; init; }
+    public override string ToString() => TenThuoc;
 }
 public sealed class BoLoc
 {
