@@ -7,7 +7,7 @@ public sealed class SearchService
     private readonly IThuocRepository _repo;
     private HashSet<string>? _tuDien; // nạp một lần, dùng lại cho mọi lần tìm
 public SearchService(IThuocRepository repo) => _repo = repo;
-    /// <summary>Tìm gộp theo tên và hoạt chất; nếu không ra gì thì thửsửa chính tả.</summary>
+    /// <summary>Tìm gộp theo tên và hoạt chất; nếu không ra gì thì thử sửa chính tả.</summary>
 public async Task<KetQuaTimKiem> TimAsync(string tuKhoa, BoLoc loc,
 CancellationToken ct = default)
     {
@@ -39,6 +39,6 @@ return await _repo.TimTheoHoatChatAsync(cacTu, tatCa, ct);
 public Task<List<ThuocKetQua>> ThuocThayTheAsync(int maThuoc,
 CancellationToken ct = default)
 => _repo.ThuocCungHoatChatAsync(maThuoc, ct);
-/// <summary>Gọi sau khi thêm/sửa thuốc đểtừ điển chính tả được nạp lại.</summary>
+/// <summary>Gọi sau khi thêm/sửa thuốc để từ điển chính tả được nạp lại.</summary>
 public void LamMoiTuDien() => _tuDien = null;
 }

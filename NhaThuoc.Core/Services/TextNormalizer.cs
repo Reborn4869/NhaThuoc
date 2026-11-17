@@ -17,7 +17,7 @@ public static class TextNormalizer
         {
             if (CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark)
             {
-                sb.Append(c); // Đã bỏ chữ 'return' ở đây
+                sb.Append(c);
             }
         }
 
